@@ -1,0 +1,115 @@
+body{
+    font-family: 'Rubik', 'Vollkorn',sans-serif;
+    margin: 0;
+    background: #cfe1cf;
+    
+}
+
+.wel{
+    text-align: center;
+    padding: 10px;
+    font-size: 36px;
+    min-width: 230px;
+    overflow: hidden;
+    position: relative;
+    top: 30px;
+}
+
+.wel span{
+    position: relative;
+    color: #e25718;
+    text-shadow: 3px 1px 0 #2e3d8e;
+    animation: jump 2s infinite;
+}
+
+.wel span:nth-child(2n){
+    color: #afcc13;
+    text-shadow: 3px 1px 0 #df1030;
+    animation-delay: 0.5s;
+}
+
+.wel span:nth-child(3n){
+    color: #efb000;
+    text-shadow: 3px 1px 0 #8d3989;
+    animation-delay: 0.75s;
+}
+
+
+.hello {
+    position: absolute;
+    /* left: 50%; */
+    /* transform: translateX(-25px); */
+    top: 150px;
+}
+
+.hello span {
+    display: inline-block;
+    /* position: relative; */
+    font-size: 36px;
+    width: 20px;
+    height: 50px;
+    padding: 15px 30px;
+    margin: 10px;
+    background: gold;
+    color: white;
+    border-radius: 50%;
+    transition: 1s ease-out;
+}
+
+.h:hover {
+    transform: scale(1.2);
+    border-radius: 0%;
+    background: dodgerblue;
+}
+
+
+.e:hover{
+    border-radius: 50%;
+    transform: rotate(360deg);
+    background: orange;
+}
+
+
+.l:hover {
+    transform: translateY(-50px) rotate(-15deg);
+    background: lightgreen;
+}
+
+.o:hover {
+    animation: swing 1s 1;
+    animation-delay: 0.5s;
+    background:white;
+    color: black;
+}
+
+
+@keyframes jump {
+    0% {top: 0;}
+    50% {top: -10px;}
+    100% {top: 0px;}
+    
+}
+
+@keyframes swing {
+    15% {
+        transform: translateX(5px);
+    }
+
+    40% {
+        transform: translateX(-5px);
+    }
+
+    65% {
+        transform: translateX(2px);
+    }
+
+    85% {
+        transform: translateX(-2px);
+    }
+
+    100% {
+        transform: translateX(0px);
+    }
+
+}
+
